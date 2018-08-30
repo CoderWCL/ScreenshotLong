@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ScreenshotLong"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "tableView ScreenshotLong used on iOS."
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
  
-  s.source_files = "UITableView+MMScreenshot","UIImage+MMAppend"
+  s.source_files = "UITableView/*.{h,m}"
   #
   #  CocoaPods is smart about how it includes source code. For source files
   #  giving a folder will include any swift, h, m, mm, c & cpp files.
@@ -98,7 +98,7 @@ Pod::Spec.new do |s|
   #
 
   #s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -124,7 +124,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "UIFoundation", "UIKit"
+  #s.frameworks = "UIFoundation", "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
